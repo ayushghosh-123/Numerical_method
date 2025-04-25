@@ -14,7 +14,7 @@ double Simpson_one_third(double x, double y, int n){
     }
 
     double h = (y-x)/n;
-    double sum = (f(x)+f(y))/2.0;
+    double sum = (f(x)+f(y));
     
     for(int i=1; i<n; i++){
         if(i % 2 == 0){
@@ -25,7 +25,7 @@ double Simpson_one_third(double x, double y, int n){
         }
     }
 
-    return h * sum;
+    return h/3 * sum;
 
 }
 
